@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS - Tailwind -->
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <!-- CSS - fontawesome -->
+    <link rel="stylesheet" href="./public/css/fontawesome.css">
+    <!-- CSS - OWL Carousel -->
+    <link rel="stylesheet" href="./public/css/owl.carousel.min.css">
+    <title>Nakula | E-Commerce</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container mx-auto mt-10 md:px-20 px-3">
+        <!-- Nav -->
+        <nav class="grid grid-cols-2 md:grid-cols-3 items-center mb-8">
+            <div class="order-1">
+                <img class="w-28" src="./public/assets/img/logo/1.png" alt="Logo">
+            </div>
+            <div class="fixed md:static z-50  inset-x-0 bottom-5 order-3 md:order-2 ">
+                <ul class="text-center w-10/12 mx-auto flex justify-center gap-x-10 md:gap-x-5 bg-white md:bg-none md:rounded-none rounded-full shadow-2xl md:shadow-none py-3 text-gray-400
+                ">
+                    <li class="hover:cursor-pointer flex flex-col gap-y-1 items-center text-primary ">
+                        <i class="fa fa-home text-xl md:hidden"></i>
+                        <p class="text-sm md:text-base font-bold">Home</p>
+                    </li>
+                    <li class="hover:cursor-pointer flex flex-col gap-y-1 items-center ">
+                        <i class="fa fa-calendar-alt text-xl md:hidden"></i>
+                        <p class="text-sm md:text-base font-bold">Event</p>
+                    </li>
+                    <li class="hover:cursor-pointer flex flex-col gap-y-1 items-center ">
+                        <i class="fa fa-store text-xl md:hidden"></i>
+                        <p class="text-sm md:text-base font-bold">Store</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-2 md:order-3 justify-self-end flex gap-x-2 items-center text-primary">
+                <i class="fa fa-bell hover:cursor-pointer"></i>
+                <i class="fa fa-shopping-cart hover:cursor-pointer"></i>
+                <button class="ml-3 btn-secondary">Masuk</button>
+            </div>
+        </nav>
+        <!-- End Nav -->
+
+        <!-- Jumbotron -->
+        <section class="grid grid-cols-1 md:grid-cols-12 items-center">
+            <div class="col-span-6">
+                <div class="flex gap-x-2 items-center mb-4 md:mb-5">
+                    <div class="w-3 h-3 bg-primary rounded-full"></div>
+                    <h3 class="font-bold text-primary">PROMO 11.11</h3>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold  mb-4 md:mb-5">Habiskan Uangmu <br> Disini!</h1>
+                <p class="font-semibold text-gray-400 text-xs md:text-sm mb-8 md:mb-10">Jangan ragu lagi, habiskan uang
+                    disini
+                    dengan
+                    belanja
+                    barang-barang <br> menarik dan dengan kualitas
+                    yang
+                    sangat bagus. Nikmati diskon 30% <br> untuk pembelian diatas rata-rata yang ditentukan.</p>
+                <div class="flex gap-x-5 justify-center md:justify-start mb-8 md:mb-10">
+                    <button class="btn-primary">Belanja Sekarang <i class="fa fa-dolly"></i></button>
+                    <button class="btn-secondary">Promo Menarik <i class="fa fa-percent"></i></button>
+                </div>
+                <div class="flex gap-x-10 justify-center md:justify-start">
+                    <img class="w-10 md:w-20" src="./public/assets/img/logo/nike.png" alt="Brand">
+                    <img class="w-10 md:w-20" src="./public/assets/img/logo/adidas.png" alt="Brand">
+                    <img class="w-10 md:w-20" src="./public/assets/img/logo/puma.png" alt="Brand">
+                    <img class="w-10 md:w-20" src="./public/assets/img/logo/ahha.png" alt="Brand">
+                </div>
+            </div>
+            <div class="col-span-6 justify-self-end hidden md:block">
+                <img src="./public/assets/img/photo/illustration.png" alt="Illustration">
+            </div>
+        </section>
+        <!-- End Jumbotron -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="container mx-auto mt-20 md:mt-10 md:px-20 px-3 mb-10">
+        <!-- Popular Products -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-x-5">
+            <div class="col-span-5">
+                <h2 class="font-bold text-2xl mb-4 md:md-5">Produk Populer <i class="fa fa-fire text-primary ml-2"></i>
+                </h2>
+                <div class="bg-blue-100 p-8 rounded-xl w-max h-max text-primary font-semibold">
+                    <p>Produk populer merupakan produk yang memiliki <br> banyak pembeli dalam satu bulan terakhir. <br>
+                        Anda
+                        bisa
+                        menentukan prduk populer <br> mana yang sedang anda cari.</p>
+                </div>
+            </div>
+            <div class="col-span-7 justify-self-start grid grid-cols-3 gap-x-80  owl-carousel">
+                <div class="bg-primary w-max p-5 rounded-xl shadow-2xl transform scale-75">
+                    <div class="flex justify-between gap-x-5 items-start mb-3">
+                        <img class="w-32 rounded-xl" src="./public/assets/img/item/nike.jpg" alt="Popular">
+                        <div class="flex flex-col gap-y-5 items-center justify-center">
+                            <i class="fa fa-tags text-white text-3xl"></i>
+                            <div class="bg-white w-18 h-18 p-2 rounded-full">
+                                <p class="font-bold text-primary text-center text-xl">70% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-10">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Nike Air Zoom <br> Structure 19</h3>
+                            <p class="text-sm text-blue-100 font-semibold mb-10">Sepatu</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-lg text-white">Rp. 2.171.482</p>
+                            <p class="font-bold text-lg text-white">4.9 <i class="fa fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-5">
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full">Masukan Keranjang <i
+                                class="fa fa-cart-arrow-down text-xl"></i></button>
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                class="fa fa-eye text-xl"></i></button>
+                    </div>
+                </div>
+                <div class="bg-white w-max p-5 rounded-xl shadow-2xl transform scale-50">
+                    <div class="flex justify-between gap-x-5 items-start mb-3">
+                        <img class="w-32 rounded-xl" src="./public/assets/img/item/nike.jpg" alt="Popular">
+                        <div class="flex flex-col gap-y-5 items-center justify-center">
+                            <i class="fa fa-tags text-white text-3xl"></i>
+                            <div class="bg-white w-18 h-18 p-2 rounded-full">
+                                <p class="font-bold text-primary text-center text-xl">70% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-10">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Nike Air Zoom <br> Structure 19</h3>
+                            <p class="text-sm text-blue-100 font-semibold mb-10">Sepatu</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-lg text-white">Rp. 2.171.482</p>
+                            <p class="font-bold text-lg text-white">4.9 <i class="fa fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-5">
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full">Masukan Keranjang <i
+                                class="fa fa-cart-arrow-down text-xl"></i></button>
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                class="fa fa-eye text-xl"></i></button>
+                    </div>
+                </div>
+                <div class="bg-white w-max p-5 rounded-xl shadow-2xl transform scale-50">
+                    <div class="flex justify-between gap-x-5 items-start mb-3">
+                        <img class="w-32 rounded-xl" src="./public/assets/img/item/nike.jpg" alt="Popular">
+                        <div class="flex flex-col gap-y-5 items-center justify-center">
+                            <i class="fa fa-tags text-white text-3xl"></i>
+                            <div class="bg-white w-18 h-18 p-2 rounded-full">
+                                <p class="font-bold text-primary text-center text-xl">70% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-10">
+                        <div>
+                            <h3 class="font-bold text-lg text-white">Nike Air Zoom <br> Structure 19</h3>
+                            <p class="text-sm text-blue-100 font-semibold mb-10">Sepatu</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-bold text-lg text-white">Rp. 2.171.482</p>
+                            <p class="font-bold text-lg text-white">4.9 <i class="fa fa-star"></i></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-x-5">
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full">Masukan Keranjang <i
+                                class="fa fa-cart-arrow-down text-xl"></i></button>
+                        <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                class="fa fa-eye text-xl"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Popular Products -->
+    </main>
+    <!-- End Main -->]
+
+    <!-- JS - fontawesome -->
+    <script src="../public/js/fontawesome.js"></script>
+    <!-- JS - animate -->
+    <script src="../public/js/animate.js"></script>
+    <!-- JS - OWL Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./public/js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const owl = $(".owl-carousel")
+            owl.owlCarousel({
+                nav: true,
+                margin: 10,
+            });
+        });
+    </script>
+</body>
+
+</html>
