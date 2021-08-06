@@ -17,7 +17,7 @@
 <body>
 
     <!-- Header -->
-    <header class="container mx-auto mt-10 md:px-20 px-3">
+    <header class="container mx-auto mt-10 md:px-20 px-3 mb-16">
         <!-- Nav -->
         <nav class="grid grid-cols-2 md:grid-cols-3 items-center mb-8">
             <div class="order-1">
@@ -55,7 +55,7 @@
                     <div class="w-3 h-3 bg-primary rounded-full"></div>
                     <h3 class="font-bold text-primary">PROMO 11.11</h3>
                 </div>
-                <h1 class="text-5xl md:text-6xl font-bold  mb-4 md:mb-5">Habiskan Uangmu <br> Disini!</h1>
+                <h1 class="text-4xl md:text-6xl font-bold  mb-4 md:mb-5">Habiskan Uangmu <br> Disini!</h1>
                 <p class="font-semibold text-gray-400 text-xs md:text-sm mb-8 md:mb-10">Jangan ragu lagi, habiskan uang
                     disini
                     dengan
@@ -63,9 +63,13 @@
                     barang-barang <br> menarik dan dengan kualitas
                     yang
                     sangat bagus. Nikmati diskon 30% <br> untuk pembelian diatas rata-rata yang ditentukan.</p>
-                <div class="flex gap-x-5 justify-center md:justify-start mb-8 md:mb-10">
-                    <button class="btn-primary">Belanja Sekarang <i class="fa fa-dolly"></i></button>
-                    <button class="btn-secondary">Promo Menarik <i class="fa fa-percent"></i></button>
+                <div class="flex  gap-x-5 justify-center md:justify-start mb-8 md:mb-10">
+                    <button class="btn-primary text-sm md:text-xl flex items-center justify-between"><span>Belanja
+                            Sekarang</span>
+                        <i class="fa fa-dolly text-sm md:text-base
+                        "></i></button>
+                    <button class="btn-secondary  text-sm md:text-xl flex items-center justify-between">
+                        <span> Promo Menarik</span> <i class="fa fa-percent text-sm md:text-base"></i></button>
                 </div>
                 <div class="flex gap-x-10 justify-center md:justify-start">
                     <img class="w-10 md:w-20" src="./public/assets/img/logo/nike.png" alt="Brand">
@@ -85,18 +89,19 @@
     <!-- Main -->
     <main class="container mx-auto mt-20 md:mt-10 md:px-20 px-3 mb-10">
         <!-- Popular Products -->
-        <section class="grid grid-cols-1 md:grid-cols-12 gap-x-5">
-            <div class="col-span-5">
+        <section class="grid grid-cols-1 md:grid-cols-12 md:gap-x-5 mb-16">
+            <div class="md:col-span-5">
                 <h2 class="font-bold text-2xl mb-4 md:md-5">Produk Populer <i class="fa fa-fire text-primary ml-2"></i>
                 </h2>
-                <div class="bg-blue-100 p-8 rounded-xl w-max h-max text-primary font-semibold">
-                    <p>Produk populer merupakan produk yang memiliki <br> banyak pembeli dalam satu bulan terakhir. <br>
+                <div class="bg-blue-100 p-8 rounded-xl md:w-max h-max text-primary font-semibold">
+                    <p class="text-sm md:text-base">Produk populer merupakan produk yang memiliki <br> banyak pembeli
+                        dalam satu bulan terakhir. <br>
                         Anda
                         bisa
                         menentukan prduk populer <br> mana yang sedang anda cari.</p>
                 </div>
             </div>
-            <div class="col-span-7 justify-self-start grid grid-cols-3 gap-x-80  owl-carousel">
+            <div class="md:col-span-7 justify-self-start grid grid-cols-3 gap-x-80  owl-carousel">
                 <div class="bg-primary w-max p-5 rounded-xl shadow-2xl transform scale-75">
                     <div class="flex justify-between gap-x-5 items-start mb-3">
                         <img class="w-32 rounded-xl" src="./public/assets/img/item/nike.jpg" alt="Popular">
@@ -181,6 +186,398 @@
             </div>
         </section>
         <!-- End Popular Products -->
+
+        <!-- Category -->
+        <section>
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <h2 class="font-bold text-2xl mb-4 md:md-5">Kategori
+                </h2>
+                <div class="bg-white shadow-xl rounded-full px-2 py-2 w-96 flex items-center gap-x-5">
+                    <div class="bg-primary p-3 hover:cursor-pointer rounded-full w-max">
+                        <i class="fa fa-search text-xl text-white"></i>
+                    </div>
+                    <input class="focus:outline-none w-full" type="text" placeholder="Cari yang anda inginkan...">
+                </div>
+            </div>
+            <div class="flex justify-between items-center  mb-10">
+                <div class="flex items-center flex-col text-primary hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-blue-100 mb-2">
+                        <i class="fa fa-border-all text-md md:text-2xl "></i>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-xs md:text-sm">Semua</p>
+                        <div class="w-full mt-1 h-1 bg-primary rounded-full"></div>
+                    </div>
+                </div>
+                <div class="flex items-center flex-col text-red-500 hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-red-100 mb-2">
+                        <i class="fa fa-male text-md md:text-2xl "></i>
+                    </div>
+                    <p class="font-semibold text-xs md:text-sm">Pria</p>
+                </div>
+                <div class="flex items-center flex-col text-pink-500 hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-pink-100 mb-2">
+                        <i class="fa fa-female text-md md:text-2xl "></i>
+                    </div>
+                    <p class="font-semibold text-xs md:text-sm">Wanita</p>
+                </div>
+                <div class="flex items-center flex-col text-green-500 hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-green-100 mb-2">
+                        <i class="fa fa-clock text-md md:text-2xl "></i>
+                    </div>
+                    <p class="font-semibold text-xs md:text-sm">Aksesoris</p>
+                </div>
+                <div class="flex items-center flex-col text-purple-500 hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-purple-100 mb-2">
+                        <i class="fa fa-screwdriver text-md md:text-2xl "></i>
+                    </div>
+                    <p class="font-semibold text-xs md:text-sm">Peralatan</p>
+                </div>
+                <div class="flex items-center flex-col text-yellow-500 hover:cursor-pointer">
+                    <div class="w-10 h-10 pt-2 text-center rounded-full bg-yellow-100 mb-2">
+                        <i class="fa fa-gamepad text-md md:text-2xl "></i>
+                    </div>
+                    <p class="font-semibold text-xs md:text-sm">Game</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center  md:justify-items-stretch md:gap-x-14 gap-y-10">
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+                <div class="group shadow-xl h-max w-64 hover:cursor-pointer  mx-auto relative">
+                    <div
+                        class="group-hover:flex text-white transition duration-700 ease-in-out hidden flex-col justify-between bg-gray-700 bg-opacity-50 w-full absolute top-0 bottom-0  rounded-xl p-5">
+                        <div>
+                            <h3 class=" font-bold text-xl">Jaket Adidas</h3>
+                            <p class=" font-bold">Pria</p>
+                            <div>
+                                <i class="fa fa-eye mr-1"></i>
+                                87
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-xl font-bold">Rp. 1.343.212</p>
+                            <div class="flex justify-between mt-5 gap-x-3">
+                                <button
+                                    class=" btn-primary text-primary px-5 py-2 font-bold rounded-full text-sm">Masukan
+                                    Keranjang <i class="fa fa-cart-arrow-down text-sm"></i></button>
+                                <button class=" bg-white text-primary px-5 py-2 font-bold rounded-full"><i
+                                        class="fa fa-eye "></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 rounded-xl m-0" src="./public/assets/img/item/1.jpg" alt="Item">
+                </div>
+            </div>
+            <div class="flex flex-col items-center my-12">
+                <div class="flex text-gray-700">
+                    <div
+                        class="h-8 w-8 mr-1 flex justify-center items-center rounded-full bg-blue-100 text-primary cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flex h-8 font-medium rounded-full bg-blue-100 text-primary">
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            1</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            ...</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            3</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full bg-primary text-white ">
+                            4</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            5</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            ...</div>
+                        <div
+                            class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">
+                            15</div>
+                        <div
+                            class="w-8 h-8 md:hidden flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in rounded-full bg-primary text-white">
+                            4</div>
+                    </div>
+                    <div
+                        class="h-8 w-8 ml-1 flex justify-center items-center rounded-full bg-blue-100 text-primary cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Category -->
     </main>
     <!-- End Main -->]
 

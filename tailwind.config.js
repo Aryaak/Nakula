@@ -14,6 +14,8 @@ module.exports = {
   variants: {
     extend: {
       cursor: ['hover', 'focus'],
+      display: ['hover', 'focus', 'group-hover'],
+      transitionDuration: ['hover', 'focus', 'group-hover'],
     },
   },
   plugins: [],
