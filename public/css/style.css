@@ -1,0 +1,20 @@
+.blinker {
+    position: relative;
+    animation: blinker 0.9s steps(2, start) infinite;
+}
+
+
+.blinker::after {
+    position: absolute;
+    bottom: 8%;
+    content: "";
+    width: 5px;
+    height: 70%;
+    background-color: black;
+}
+
+@keyframes blinker {
+    to {
+        visibility: hidden;
+    }
+}
